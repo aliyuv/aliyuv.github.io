@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://aliyuv.github.io</id>
+    <title>小雨的博客</title>
+    <updated>2022-01-04T12:30:03.695Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://aliyuv.github.io"/>
+    <link rel="self" href="https://aliyuv.github.io/atom.xml"/>
+    <subtitle>温故而知新</subtitle>
+    <logo>https://aliyuv.github.io/images/avatar.png</logo>
+    <icon>https://aliyuv.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2022, 小雨的博客</rights>
+    <entry>
+        <title type="html"><![CDATA[HTML入门笔记1]]></title>
+        <id>https://aliyuv.github.io/post/html-ru-men-bi-ji-1/</id>
+        <link href="https://aliyuv.github.io/post/html-ru-men-bi-ji-1/">
+        </link>
+        <updated>2022-01-04T11:48:43.000Z</updated>
+        <content type="html"><![CDATA[<!-- more -->
+<h1 id="html是谁发明的">HTML是谁发明的?</h1>
+<p>HTML是由李爵士发明的.</p>
+<h1 id="html-起手应该写什么">HTML 起手应该写什么?</h1>
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    &lt;meta charset=&quot;UTF-8&quot;&gt;
+    &lt;title&gt;Title&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt; hello world &lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<h1 id="常用的章节标签有哪些分别是什么意思呢">常用的章节标签有哪些?分别是什么意思呢?:</h1>
+<ol>
+<li>h1——h6 :标题</li>
+<li>section:章节</li>
+<li>article:文章</li>
+<li>p:段落</li>
+<li>header:头部</li>
+<li>footer:脚部</li>
+<li>main:主要内容</li>
+<li>div:旁支内容</li>
+</ol>
+<h1 id="html全局属性有哪些">HTML全局属性有哪些?</h1>
+<ol>
+<li>class -&gt; 类名</li>
+<li>contenteditalbe -&gt; 枚举属性,表示元素是否可被用户编辑</li>
+<li>hidden -&gt; 布尔属性表示该元素尚未或者不在相关,列如,它可用于隐藏在登录过程完成之前无法使用的页面元素,浏览器不会呈现此元素.但是不得使用此属性隐藏合法显示的内容</li>
+<li>id -&gt; 定义唯一标识符(ID),该标识在整个文档中必须是唯一的. 类似每个人的身份证ID</li>
+<li>style -&gt; 应用于元素的CSS样式声明</li>
+<li>tabindex -&gt; 指示元素是否可以获取输入焦点(可聚焦) -&gt; 分别有几个值:
+<ol>
+<li>负值表示该元素是可以聚焦的,但不应该通过顺序键盘导航到达</li>
+<li>0表示元素应该通过顺序键盘导航可聚焦和可到达,但其相对顺序由平台约定定义</li>
+<li>正值意味着元素应该可以通过顺序键盘导航进行聚焦和访问;元素聚焦的顺序是tabindex的增加值。如果多个元素共享相同的tabindex，则它们的相对顺序遵循它们在文档中的相对位置。</li>
+</ol>
+</li>
+<li>title -&gt; 表示与其所属元素相关信息的文本</li>
+</ol>
+<h1 id="常用的内容标签有哪些分别是什么意思">常用的内容标签有哪些，分别是什么意思?</h1>
+<ol>
+<li>ol li -&gt; 表示有序的列表和列表中的每一个子列表</li>
+<li>ul li -&gt; 表示无序的列表和列表中的每一个子列表</li>
+<li>dl dt dd -&gt; 描述列表+被描述对象+描述的具体内容</li>
+<li>per -&gt; 如果想在HTML中保留空格以及TAB等格式就可以使用此标签</li>
+<li>code -&gt; 等宽的意思. 可以用per包裹code ,可以展示代码以及命令行相关的bash</li>
+<li>hr -&gt; 水平分割线</li>
+<li>br -&gt; 换行换行缩进</li>
+<li>em -&gt; 语义化:指强调的语气</li>
+<li>strong -&gt; 语义化: 本身就是很重要,默认样式是文本加粗.</li>
+<li>quote -&gt; 内联的引用</li>
+<li>blockquote -&gt; 块级的引用 (会换行缩进)</li>
+</ol>
+]]></content>
+    </entry>
+</feed>
