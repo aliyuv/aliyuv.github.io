@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://aliyuv.github.io</id>
     <title>小雨的博客</title>
-    <updated>2022-01-04T13:06:47.617Z</updated>
+    <updated>2022-01-05T06:03:28.909Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://aliyuv.github.io"/>
     <link rel="self" href="https://aliyuv.github.io/atom.xml"/>
@@ -10,6 +10,160 @@
     <logo>https://aliyuv.github.io/images/avatar.png</logo>
     <icon>https://aliyuv.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, 小雨的博客</rights>
+    <entry>
+        <title type="html"><![CDATA[HTML常用标签]]></title>
+        <id>https://aliyuv.github.io/post/html-chang-yong-biao-qian/</id>
+        <link href="https://aliyuv.github.io/post/html-chang-yong-biao-qian/">
+        </link>
+        <updated>2022-01-05T06:00:46.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="html常用标签">HTML常用标签</h1>
+<h3 id="a-标签的用法有哪些">a 标签的用法有哪些?</h3>
+<ul>
+<li>属性
+<ul>
+<li>href
+<ol>
+<li>网址 : //google.com</li>
+<li>路径:./index.html</li>
+<li>伪协议:JavaScript:; 此协议主要运用于当前超链接不想做其他事的时候使用</li>
+<li>mailto✉️</li>
+<li>tel☎️</li>
+<li>ID
+<ol>
+<li>href 的值等于点击当前超链接要跳转过去元素的ID</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>target  _blank 表示新建窗口打开 self 表示在当前页面打开</li>
+<li>rel=noopener
+<ul>
+<li>如果你需要用 a 标签打开一个标签页时，你会使用 target='_blank' 这个属性，此时你需要添加 rel='noreferrer noopener'</li>
+<li>这个是为了解决安全性问题.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="img标签的用法">img标签的用法?</h3>
+<ul>
+<li>属性</li>
+</ul>
+<ol>
+<li>src 可以是文件路径 也可以是网络地址 通常网络地址前面不加协议 因为一旦写错地址就会引发很多bug,所以最优写法比如://google.com
+<ol>
+<li>//google.com 这样写的好处就是不管 <code>//</code> 前面是什么协议,最终请求的时候浏览器会自己寻找最终这个地址的协议头</li>
+</ol>
+</li>
+<li>alt 当图片加载不出来的时候提示用户此图片信息</li>
+<li>width / height: 设置宽高,一般适合宽度,高度让图片自适应,同时设置会导致图片变形,其实你知道图片具体宽高设置也是可以的,保险起见只设置宽度.</li>
+</ol>
+<ul>
+<li>
+<p>事件</p>
+<ol>
+<li>onload: 加载成功需要做出的操作</li>
+<li>onerror:加载失败需要做出的操作</li>
+</ol>
+</li>
+<li>
+<p>响应式</p>
+<ul>
+<li>Max-width:100%; 设置此CSS就是为了让图片在所有设备宽度都能够自动适应当前设备.</li>
+</ul>
+<p>~~可替换元素~~ 当图片加载失败的时候可以使用JavaScript中 监听 img 事件 onerror 来操作.</p>
+</li>
+</ul>
+<h3 id="table-标签的用法">table 标签的用法?</h3>
+<p>绘制表格使用；如果是做后台管理的用户列表等类似 Excel 功能，这个标签是最佳的选择</p>
+<p>table 定义HTML中的表格元素<br>
+table标签中一般会包括多个th,tr,td<br>
+thead 表格头部<br>
+tbody 表格身体<br>
+tfoot 表格脚部<br>
+th 头<br>
+tr 行<br>
+td 列</p>
+<h5 id="html-table-标签具体用法">HTML <sub>&lt;table&gt;</sub> 标签具体用法</h5>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        table{
+            width: 1000px;
+            table-layout: auto;
+            border-collapse: collapse;
+            border-spacing: 0 ;
+        }
+        th,td{
+            border: 1px solid green;
+        }
+        tfoot tr td{
+            text-align: center;
+            font-size: 100px;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+        <th>学号</th>
+        <th>姓名</th>
+        <th>性别</th>
+        <th>年龄</th>
+        <th>地址</th>
+        </thead>
+        <tbody>
+            <tr>
+                <th>1</th>
+                <td>孙悟空</td>
+                <td>男</td>
+                <td>100</td>
+                <td>花果山</td>
+            </tr>
+            <tr>
+                <th>1</th>
+                <td>孙悟空</td>
+                <td>男</td>
+                <td>100</td>
+                <td>花果山</td>
+            </tr>
+            <tr>
+                <th>1</th>
+                <td>孙悟空</td>
+                <td>男</td>
+                <td>100</td>
+                <td>花果山</td>
+            </tr>
+            <tr>
+                <th>1</th>
+                <td>孙悟空</td>
+                <td>男</td>
+                <td>100</td>
+                <td>花果山</td>
+            </tr>
+            <tr>
+                <th>1</th>
+                <td>孙悟空</td>
+                <td>男</td>
+                <td>100</td>
+                <td>花果山</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>签名</th>
+                <td colspan="4">孙悟空</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[HTML入门笔记1]]></title>
         <id>https://aliyuv.github.io/post/html-ru-men-bi-ji-1/</id>
