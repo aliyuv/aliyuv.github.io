@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://aliyuv.github.io</id>
     <title>小雨的博客</title>
-    <updated>2022-01-05T06:13:35.792Z</updated>
+    <updated>2022-01-09T12:36:06.486Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://aliyuv.github.io"/>
     <link rel="self" href="https://aliyuv.github.io/atom.xml"/>
@@ -10,6 +10,42 @@
     <logo>https://aliyuv.github.io/images/avatar.png</logo>
     <icon>https://aliyuv.github.io/favicon.ico</icon>
     <rights>All rights reserved 2022, 小雨的博客</rights>
+    <entry>
+        <title type="html"><![CDATA[浅析URL]]></title>
+        <id>https://aliyuv.github.io/post/qian-xi-url/</id>
+        <link href="https://aliyuv.github.io/post/qian-xi-url/">
+        </link>
+        <updated>2022-01-09T12:35:26.000Z</updated>
+        <content type="html"><![CDATA[<h1 id="浅析url">浅析URL</h1>
+<h3 id="url-包含哪几部分每部分分别有什么作用">URL 包含哪几部分,每部分分别有什么作用</h3>
+<p>URL指的是统一资源定位符(A Uniform Resource Locator).URL包含协议、域名或IP、端口号、路径、查询参数、锚点.</p>
+<pre><code>1. HTTPS://是协议,表明了浏览器使用何种协议,http和https.
+2. www.google.com 是域名。表明正在请求哪个Web服务器。或者，可以直接使用IP address。
+3. :80 是端口。HTTP协议的标准端口，HTTP为80，HTTPS为443.
+4. /path/JavaScript/xxx 是网络服务器上资源的路径。在Web的早期阶段，像这样的路径表示Web服务器上的物理文件位置.
+5. ?key1=username&amp;key2=iPhone 是查询参数。 这些参数是用 &amp; 符号分隔的键/值对列表。每个Web服务器都有自己关于参数的规则。
+6. #SomewhereInTheDocument是锚点。 锚点表示资源中的一种“书签”，给浏览器显示位于该“加书签”位置的内容的方向。例如，在视频或音频文档上，浏览器将尝试转到锚代表的时间。
+</code></pre>
+<h3 id="dns-的作用是什么nslookup-命令怎么用">DNS 的作用是什么，nslookup 命令怎么用?</h3>
+<p>DNS 是域名系统 (Domain Name System) ，它是由解析器和域名服务器组成的。域名服务器是保存有该网络中所有主机的域名和对应IP地址，并将域名转换为IP地址。有了DNS服务器，就不用输入IP地址来访问一个网站，而是可以通过输入网址访问。</p>
+<p>使用nslookup解析域名<br>
+<a href="https://imgtu.com/i/7ky9F1"><img src="https://s4.ax1x.com/2022/01/09/7ky9F1.png" alt="7ky9F1.png" loading="lazy"></a></p>
+<h3 id="ip-的作用是什么ping-命令怎么用">IP 的作用是什么，ping 命令怎么用</h3>
+<p>IP 的作用就是定位一台设备, 获取数据报文与其他设备交流.<br>
+比如当我们访问142.251.43.14 也是可以访问Google的.<br>
+Ping就是查看域名下的服务器IP地址</p>
+<p>格式 :ping  域名<br>
+<a href="https://imgtu.com/i/7kyCJx"><img src="https://s4.ax1x.com/2022/01/09/7kyCJx.md.png" alt="7kyCJx.md.png" loading="lazy"></a></p>
+<h3 id="域名是什么分别哪几类域名">域名是什么，分别哪几类域名</h3>
+<p><strong>网域名称</strong>（英语：Domain Name，简称：Domain），简称<strong>域名</strong>、<strong>网域</strong>，是由一串用点分隔的字符组成的 互联网上某一台计算机 或计算机组的名称，用于在数据传输时标识计算机的电子方位。域名可以说是一个 IP地址的代称，目的是为了便于记忆后者。</p>
+<p>域名后缀是指代表一个域名类型的符号。 不同后缀的域名有不同的含义，申请单位可根据自身的属性，选择相应后缀的域名。比如以下几种：</p>
+<pre><code>.com：国际通用顶级域名，一般代表商业性的机构或公司。 个人和公司都可以注册，并且操作简单，只需要在域名注册商网站上注册用户，填写真实有效的信息，个人注册填写个人信息，公司注册则填写公司信息。之后充值就可以立即拥有该域名，解析一般是2小时生效。 
+.net：国际域名，最初用于网络机构。注册步骤同.com域名。 
+.org：国际域名，一般代表非盈利的组织、团体。注册方法步骤同.com域名。 
+.cn：国内域名，代表中国网站。由我国国际互联网络信息中心（Inter NIC）正式注册并运行。 个人和公司都可注册，只是cn域名注册比较严格，需要提交一些资料审核通过后才可以解锁。 
+</code></pre>
+]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[HTML常用标签]]></title>
         <id>https://aliyuv.github.io/post/html-chang-yong-biao-qian/</id>
